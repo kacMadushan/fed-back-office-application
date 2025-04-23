@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+
+    .title-heading1.ant-typography {
+        @apply text-black font-bold;
+    }
+
+    .title-heading2.ant-typography {
+        @apply text-black font-bold;
+    }
+
+    .title-heading3.ant-typography {
+        @apply text-black font-bold;
+    }
+
+    .title-heading4.ant-typography {
+        @apply text-black font-medium;
+    }
+
+    .title-heading5.ant-typography {
+        @apply text-black font-medium;
+    }
+}
+
+@layer components {
+    .logo-title.ant-typography {
+        @apply text-black font-bold font-secondary;
+    }
+
+    .logo-circle {
+        @apply bg-orage text-white text-center text-xl py-1 font-secondary w-9 h-9 rounded-full;
+    }
+
+    .btn-primary.ant-btn.ant-btn-primary {
+        @apply py-5 font-medium
+    }
+}
