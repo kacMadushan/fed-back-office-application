@@ -1,6 +1,8 @@
+import { Card } from 'antd';
+
 const ProductDetailsPage = () => {
     return (
-        <div>details page</div>
+        <Card>Product details page</Card>
     );
 };
 

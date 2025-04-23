@@ -8,7 +8,9 @@ const Sidebar = Layout.Sider;
 const LeftMenu = () => {
     return (
         <Sidebar className='bg-white border-r border-gray-200' width={260}>
-            <Logo />
+            <div className='flex items-center justify-center h-16 mb-5'>
+                <Logo />
+            </div>
             <LeftMenuContent />
         </Sidebar>
     );

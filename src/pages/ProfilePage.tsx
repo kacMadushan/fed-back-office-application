@@ -1,6 +1,8 @@
+import { Card } from 'antd';
+
 const ProfilePage = () => {
     return (
-        <div>profile page</div>
+        <Card>profile page</Card>
     );
 };
 

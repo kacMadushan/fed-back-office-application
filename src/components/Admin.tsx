@@ -12,7 +12,7 @@ const Admin = () => {
             <LeftMenu />
             <Layout>
                 <TopMenu />
-                <MainContent>
+                <MainContent className='py-10 px-10'>
                     <Outlet />
                 </MainContent>
             </Layout>

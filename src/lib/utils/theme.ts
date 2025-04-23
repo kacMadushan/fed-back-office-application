@@ -1,3 +1,4 @@
+
 import { blue } from './colors';
 import { primaryFont } from './typography';
 
@@ -16,6 +17,9 @@ export const theme = {
             paddingInline: 16,
             hoverBorderColor: blue[200],
             activeBorderColor: blue[200]
+        },
+        Popover: {
+            titleMinWidth: 320
         }
     }
 }
