@@ -43,4 +43,12 @@ module.exports = {
             },
         ],
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+            rules: {
+                'no-unused-vars': 'off',
+            }
+        }
+    ],
 };

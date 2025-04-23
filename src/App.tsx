@@ -1,8 +1,10 @@
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Admin from './components/Admin';
+import AdminLayout from './components/AdminLayout';
+import PrivateRoute from './components/PrivateRoute';
+import AdminPage from './pages/AdminPage';
 import LoginPage from './pages/LoginPage';
-import ProductDetailsPage from './pages/ProductDetailsPage';
 import ProductsPage from './pages/ProductsPage';
 import ProfilePage from './pages/ProfilePage';
 
@@ -10,10 +12,17 @@ const App = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Admin />}>
+                <Route
+                    path='/admin'
+                    element={
+                        <PrivateRoute>
+                            <AdminLayout />
+                        </PrivateRoute>
+                    }
+                >
+                    <Route index element={<AdminPage />} />
                     <Route path='products' element={<ProductsPage />} />
-                    <Route path='products/:productId' element={<ProductDetailsPage />} />
-                    <Route path='/profile' element={<ProfilePage />} />
+                    <Route path='profile' element={<ProfilePage />} />
                 </Route>
                 <Route path='/login' element={<LoginPage />} />
             </Routes>

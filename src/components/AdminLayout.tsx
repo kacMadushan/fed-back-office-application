@@ -6,7 +6,7 @@ import TopMenu from './TopMenu';
 
 const MainContent = Layout.Content;
 
-const Admin = () => {
+const AdminLayout = () => {
     return (
         <Layout className='min-h-screen'>
             <LeftMenu />
@@ -20,4 +20,4 @@ const Admin = () => {
     );
 };
 
-export default Admin;
+export default AdminLayout;

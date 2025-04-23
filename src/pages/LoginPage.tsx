@@ -12,7 +12,7 @@ const LoginPage = () => {
 
     useEffect(() => {
         if (isAuthenticated) {
-            navigate('/products', { replace: true })
+            navigate('/admin/products', { replace: true })
         }
     }, [isAuthenticated, navigate]);
 

@@ -19,7 +19,7 @@ const LoginForm = () => {
     const onSubmitLogin = async (data: IUserCredentials) => {
         try {
             await userLogin(data);
-            navigate('/products', { replace: true });
+            navigate('/admin/products', { replace: true });
         } catch (error) {
             openMessageView();
         }
