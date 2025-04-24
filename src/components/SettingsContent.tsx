@@ -14,7 +14,7 @@ const SettingsContent = () => {
             <Divider />
             <List className='px-4'>
                 <ListItem>
-                    <Link to='/admin/profile'>
+                    <Link to='/profile'>
                         <UserOutlined /> Profile
                     </Link>
                 </ListItem>

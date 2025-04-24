@@ -3,8 +3,7 @@ import { Navigate, useLocation } from 'react-router-dom';
 
 import { useAuthentication } from '../providers/AuthenticationProvider';
 
-// eslint-disable-next-line no-undef
-const PrivateRoute = ({ children }: { children: JSX.Element }) => {
+const PrivateRoute = ({ children }: { children: React.JSX.Element }) => {
     const { isAuthenticated } = useAuthentication();
     const location = useLocation();
 

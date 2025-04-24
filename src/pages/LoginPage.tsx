@@ -1,5 +1,5 @@
 import { Card, Col, Row } from 'antd';
-import { useEffect } from 'react';
+import { memo, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import LoginForm from '../components/LoginForm';
@@ -12,7 +12,7 @@ const LoginPage = () => {
 
     useEffect(() => {
         if (isAuthenticated) {
-            navigate('/admin/products', { replace: true })
+            navigate('/products', { replace: true })
         }
     }, [isAuthenticated, navigate]);
 
@@ -28,4 +28,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default memo(LoginPage);
