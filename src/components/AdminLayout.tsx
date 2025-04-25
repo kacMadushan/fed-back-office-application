@@ -12,7 +12,7 @@ const AdminLayout = () => {
             <LeftMenu />
             <Layout>
                 <TopMenu />
-                <MainContent className='py-10 px-10'>
+                <MainContent className='py-10 px-10 bg-clr_zinc-50'>
                     <Outlet />
                 </MainContent>
             </Layout>

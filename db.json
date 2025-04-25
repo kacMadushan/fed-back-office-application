@@ -16,93 +16,25 @@
             "id": 1,
             "name": "MacBook Pro 14-inch",
             "category_id": 3,
-            "attributes": [
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                }
-            ]
+            "attributes": []
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "MacBook Pro 16-inch",
             "category_id": 3,
-            "attributes": [
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                }
-            ]
+            "attributes": []
         },
         {
-            "id": 1,
+            "id": 3,
             "name": "MacBook Air 13-inch",
             "category_id": 3,
-            "attributes": [
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                }
-            ]
+            "attributes": []
         },
         {
-            "id": 1,
+            "id": 4,
             "name": "MacBook Air 15-inch",
             "category_id": 3,
-            "attributes": [
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                },
-                {
-                    "code": "",
-                    "value": ""
-                }
-            ]
+            "attributes": []
         }
     ]
 }

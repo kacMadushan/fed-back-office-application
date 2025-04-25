@@ -1,5 +1,7 @@
 import { Table } from 'antd';
+import { Link } from 'react-router-dom';
 
+import { IProduct } from '../lib/models/product.interface';
 
 const columns = [
     {
@@ -25,14 +27,16 @@ const columns = [
     {
         title: 'Actions',
         dataIndex: 'actions',
-        key: 'actions'
+        key: 'actions',
+        render: () => <Link to={`/products`}>View</Link>
     }
 ];
 
-const ProductsTable = () => {
+const ProductsTable = ({ products }: any) => {
     return (
         <Table
             columns={columns}
+            dataSource={products}
             rowKey='id'
             pagination={{ pageSize: 10 }}
         />

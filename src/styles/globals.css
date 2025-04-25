@@ -4,37 +4,37 @@
 
 @layer base {
     body {
-        @apply bg-gray-100;
+        @apply bg-clr_zinc-50;
     }
 
     .title-heading1.ant-typography {
-        @apply text-black font-bold;
+        @apply text-clr_zinc-800 font-bold;
     }
 
     .title-heading2.ant-typography {
-        @apply text-black font-bold;
+        @apply text-clr_zinc-800 font-bold;
     }
 
     .title-heading3.ant-typography {
-        @apply text-black font-bold;
+        @apply text-clr_zinc-800 font-bold;
     }
 
     .title-heading4.ant-typography {
-        @apply text-black font-medium;
+        @apply text-clr_zinc-800 font-bold;
     }
 
     .title-heading5.ant-typography {
-        @apply text-black font-medium;
+        @apply text-clr_zinc-800 font-medium;
     }
 }
 
 @layer components {
     .logo-title.ant-typography {
-        @apply text-black font-bold font-secondary;
+        @apply text-clr_zinc-800 font-bold font-secondary;
     }
 
     .logo-circle {
-        @apply bg-orage text-white text-center text-xl py-1 font-secondary w-9 h-9 rounded-full;
+        @apply bg-clr_zinc-800 text-clr_white text-center text-xl py-1 font-secondary w-9 h-9 rounded-full;
     }
 
     .btn-primary.ant-btn.ant-btn-primary {

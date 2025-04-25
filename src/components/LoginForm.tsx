@@ -12,14 +12,17 @@ const FormItem = Form.Item;
 const InputPassword = Input.Password;
 
 const LoginForm = () => {
-    const { openMessageView, messageContext } = useMessageView({ messageType: 'error', content: Login_VALIDATION.error });
+    const { openMessageView, messageContext } = useMessageView({
+        messageType: 'error',
+        content: Login_VALIDATION.error
+    });
     const { userLogin } = useAuthentication();
     const navigate = useNavigate();
 
     const onSubmitLogin = async (data: IUserCredentials) => {
         try {
             await userLogin(data);
-            navigate('/admin/products', { replace: true });
+            navigate('/products', { replace: true });
         } catch (error) {
             openMessageView();
         }

@@ -14,3 +14,17 @@ export const grey = {
 export const orage = '#FF6700';
 export const white = '#FFFFFF';
 export const black = '#04080F';
+
+export const primary_white = '#ffffff';
+export const clr_white = 'hsl(0 0% 100%)';
+export const clr_zinc = {
+    50: 'hsl(0 0% 98%)',
+    100: 'hsl(240 4.8% 95.9%)',
+    200: 'hsl(240 5.9% 90%)',
+    300: 'hsl(240 4.9% 83.9%)',
+    400: 'hsl(240 5% 64.9%)',
+    500: 'hsl(240 3.8% 46.1%)',
+    600: 'hsl(240 5.2% 33.9%)',
+    700: 'hsl(240 5.9% 10%)',
+    800: 'hsl(240 10% 3.9%)',
+}

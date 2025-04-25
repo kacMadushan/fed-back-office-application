@@ -1,11 +1,11 @@
 import { lazy } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import AdminLayout from './components/AdminLayout';
 import Loadable from './components/Loadable';
 import PrivateRoute from './components/PrivateRoute';
-import LoginPage from './pages/LoginPage';
 
+const LoginPage = Loadable(lazy(() => import('./pages/LoginPage')));
 const ProductDetailsPage = Loadable(lazy(() => import('./pages/ProductDetailsPage')));
 const ProductsPage = Loadable(lazy(() => import('./pages/ProductsPage')));
 const ProfilePage = Loadable(lazy(() => import('./pages/ProfilePage')));
@@ -32,9 +32,9 @@ const AppRoutes = () => {
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <Router>
             <AppRoutes />
-        </BrowserRouter>
+        </Router>
     );
 };
 
