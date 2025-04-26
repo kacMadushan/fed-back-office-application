@@ -2,13 +2,41 @@
     "categories": [
         {
             "id": 1,
-            "parent_id": 2,
             "name": "Electronics"
         },
         {
-            "id": 1,
+            "id": 2,
+            "parent_id": 1,
+            "name": "Computers"
+        },
+        {
+            "id": 3,
             "parent_id": 2,
-            "name": "Electronics"
+            "name": "Laptops"
+        },
+        {
+            "id": 4,
+            "parent_id": 2,
+            "name": "Desktop PCs"
+        },
+        {
+            "id": 5,
+            "parent_id": 1,
+            "name": "Smartphones"
+        },
+        {
+            "id": 6,
+            "name": "Home & Kitchen"
+        },
+        {
+            "id": 7,
+            "parent_id": 6,
+            "name": "Furniture"
+        },
+        {
+            "id": 8,
+            "parent_id": 6,
+            "name": "Furniture"
         }
     ],
     "products": [
@@ -16,7 +44,12 @@
             "id": 1,
             "name": "MacBook Pro 14-inch",
             "category_id": 3,
-            "attributes": []
+            "attributes": [
+                {
+                    "code": "",
+                    "value": ""
+                }
+            ]
         },
         {
             "id": 2,
